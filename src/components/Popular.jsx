@@ -13,7 +13,8 @@ function Popular() {
 
     useEffect(() => {
         getData(url)
-    }, [url,getData])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [url])
 
     function nextPage() {
         setUrl(books.next)

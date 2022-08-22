@@ -11,6 +11,7 @@ export default function ApiContextProvider(props) {
    async function getData(url) {
     let {data}=await axios.get(`${url}`);
     setBooks(data)
+    console.log(books)
    }
 
 
