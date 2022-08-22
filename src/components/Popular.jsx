@@ -48,7 +48,7 @@ function Popular() {
                     <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
                         {booksData ?
                             booksData.map((item) => (
-                                <div key={item.id} className="group border mb-3 pb-4 transition duration-500 hover:-translate-y-5 rounded">
+                                <div key={item.id} className="group border mb-3 pb-4 transition duration-500 hover:-translate-y-4 rounded">
                                    <CardItem item={item}/>
                                 </div>
                             )) : <Loader/> }
